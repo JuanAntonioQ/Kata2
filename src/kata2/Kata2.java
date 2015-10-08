@@ -9,9 +9,8 @@ public class Kata2 {
         Integer[] array = {2,2,11,4,2,6,11,2,3,5,11,5,100};
         String[] array1 = {"Ana", "Juan", "Pedro", "Juan", "Pedro", "Juan", "Pedro"};    
         
-        Histogram histo = new Histogram(array);
+        Histogram <Integer> histogram = BuildHisto.computHisto(array);
         
-        HashMap <String, Integer> histogram = histo.getHisto();
         
         
         for (Object key : histogram.keySet()) {
